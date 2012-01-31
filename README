@@ -1,0 +1,7 @@
+This is my vim configuration. I hope you like it. I tried to keep things well documented in the vimrc and gvimrc files. This is used on a system with Mac OS X and MacVim installed, but you can probably get it to work on more than just that. To use, put this repository anywhere you'd like (or ~/.vim).
+
+Then:
+ln -s {path-to-repository}/vimrc ~/.vimrc
+ln -s {path-to-repository}/gvimrc ~/.gvimrc
+and if you don't have the repository at .vim:
+ln -s {path-to-repository} ~/.vim
