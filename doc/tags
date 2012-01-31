@@ -144,6 +144,15 @@ NERD_tree.txt	NERD_tree.txt	/*NERD_tree.txt*
 ack	ack.txt	/*ack*
 ack-author	ack.txt	/*ack-author*
 ack.txt	ack.txt	/*ack.txt*
+buffergator	buffergator.txt	/*buffergator*
+buffergator-buffer-keys	buffergator.txt	/*buffergator-buffer-keys*
+buffergator-commands	buffergator.txt	/*buffergator-commands*
+buffergator-contents	buffergator.txt	/*buffergator-contents*
+buffergator-global-keys	buffergator.txt	/*buffergator-global-keys*
+buffergator-introduction	buffergator.txt	/*buffergator-introduction*
+buffergator-options	buffergator.txt	/*buffergator-options*
+buffergator-tabpage-keys	buffergator.txt	/*buffergator-tabpage-keys*
+buffergator.txt	buffergator.txt	/*buffergator.txt*
 command-t	command-t.txt	/*command-t*
 command-t-authors	command-t.txt	/*command-t-authors*
 command-t-commands	command-t.txt	/*command-t-commands*
