@@ -1,4 +1,4 @@
 *.DS_Store
 .netrwhist
-_backup
-_temp
+_backup/*
+_temp/*
