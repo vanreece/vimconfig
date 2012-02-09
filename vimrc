@@ -12,6 +12,7 @@ set list                  "Enable the use of listchars
 set expandtab             "Put spaces in when tab is entered
 set tabstop=2             "Two spaces for a tab
 set shiftwidth=2          "Use two spaces for auto indentation
+set autoindent            "Preserve indent level when moving to a new line
 
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>f :Ack<space>
