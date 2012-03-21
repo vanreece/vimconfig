@@ -6,7 +6,7 @@ set scrolloff=3           "Keep a few lines of context when scrolling
 set history=1000          "Keep more history of commands/searches
 set wildmenu              "Command line tab completion gives list 
 set wildmode=list:longest "Give it in the buffer, rather than statusline
-set title                 "Set terminal title to file being edited
+"set title                 "Set terminal title to file being edited
 set listchars=trail:·     "Put trailing spaces as ·
 set list                  "Enable the use of listchars
 set expandtab             "Put spaces in when tab is entered
