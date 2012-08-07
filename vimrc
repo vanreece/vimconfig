@@ -16,7 +16,6 @@ set autoindent            "Preserve indent level when moving to a new line
 
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>f :Ack<space>
-nmap <C-F> :Ack<space>
 
 "Turn on filetype plugin, needed for NERDCommenter
 filetype plugin on
