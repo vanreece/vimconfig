@@ -1,5 +1,7 @@
 syntax on                 "Syntax highlighting on
 set number                "Line numbers on
+"# Toggle line numbers and fold column for easy copying:
+nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 set hlsearch              "Highlights for search
 set nowrap                "Don't wrap long lines
 set scrolloff=3           "Keep a few lines of context when scrolling
@@ -14,7 +16,9 @@ set tabstop=2             "Two spaces for a tab
 set shiftwidth=2          "Use two spaces for auto indentation
 set autoindent            "Preserve indent level when moving to a new line
 
+"\n for NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
+"\f for ack
 nmap <leader>f :Ack<space>
 
 "Turn on filetype plugin, needed for NERDCommenter
