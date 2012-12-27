@@ -1,20 +1,21 @@
-syntax on                 "Syntax highlighting on
-set number                "Line numbers on
+syntax on                      "Syntax highlighting on
+set number                     "Line numbers on
 "# Toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
-set hlsearch              "Highlights for search
-set nowrap                "Don't wrap long lines
-set scrolloff=3           "Keep a few lines of context when scrolling
-set history=1000          "Keep more history of commands/searches
-set wildmenu              "Command line tab completion gives list 
-set wildmode=list:longest "Give it in the buffer, rather than statusline
-"set title                 "Set terminal title to file being edited
-set listchars=trail:·     "Put trailing spaces as ·
-set list                  "Enable the use of listchars
-set expandtab             "Put spaces in when tab is entered
-set tabstop=2             "Two spaces for a tab
-set shiftwidth=2          "Use two spaces for auto indentation
-set autoindent            "Preserve indent level when moving to a new line
+set hlsearch                   "Highlights for search
+set nowrap                     "Don't wrap long lines
+set scrolloff=3                "Keep a few lines of context when scrolling
+set history=1000               "Keep more history of commands/searches
+set wildmenu                   "Command line tab completion gives list 
+set wildmode=list:longest      "Give it in the buffer, rather than statusline
+"set title                      "Set terminal title to file being edited
+set listchars=tab:\ \ ,trail:· "Put trailing spaces as ·
+set list                       "Enable the use of listchars
+set expandtab                  "Put spaces in when tab is entered
+set tabstop=2                  "Two spaces for a tab
+set shiftwidth=2               "Use two spaces for auto indentation
+set autoindent                 "Preserve indent level when moving to a new line
+set colorcolumn=80             "Color column 80
 
 "\n for NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
