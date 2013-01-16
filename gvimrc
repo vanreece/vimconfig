@@ -1,5 +1,5 @@
 set background=dark
-color solarized
+color inkpot
 set guioptions-=T
 set guifont=Ubuntu\ Mono\ 14
 
