@@ -8,5 +8,5 @@ if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
   nmap <D-t> :CommandT<CR>
   nmap <D-F> :Ack<space>
-  set guifont=Menlo\ Regular:h16
+  set guifont=Inconsolata:h18
 endif
