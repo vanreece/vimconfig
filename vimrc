@@ -51,6 +51,8 @@ set directory=~/.vim/_temp/   " where to put swap files.
 inoremap <c-u> <esc>viwUea
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+vnoremap <leader>c :w !pbcopy<cr><cr>
+nnoremap <leader>v :set paste<cr>:r !pbpaste<cr>:set nopaste<cr>
 
 
 let g:CommandTMaxFiles=200000
