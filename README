@@ -5,8 +5,3 @@ ln -s {path-to-repository}/vimrc ~/.vimrc
 ln -s {path-to-repository}/gvimrc ~/.gvimrc
 and if you don't have the repository at .vim:
 ln -s {path-to-repository} ~/.vim
-
-To get command-t to work:
-cd ~/.vim/ruby/command-t/
-ruby extconf.rb
-make
