@@ -1,1 +1,14 @@
-TBD
+My git configuration
+
+Setup should be pretty simple:
+
+1) Clone the repository into .vim:
+
+git clone https://github.com/vanreece/vimconfig.git ~/.vim
+
+2) Install vundle:
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim -c 'PluginInstall' -c q -c q
+
+3) Enjoy!
