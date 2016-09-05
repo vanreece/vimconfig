@@ -1,3 +1,34 @@
+"Vundle Setup
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()
+filetype plugin indent on
+"End Vundle Setup
+
+if has('gui_running')
+  set background=dark
+  colorscheme solarized
+  set guioptions-=T
+  if has("gui_macvim")
+    set guifont=Inconsolata:h18
+  else
+    set guifont=Ubuntu\ Mono\ 14
+    set guifont=Monospace\ 14
+  endif
+else
+  colorscheme zenburn
+endif
+
 syntax on                      "Syntax highlighting on
 set number                     "Line numbers on
 "# Toggle line numbers and fold column for easy copying:
@@ -41,3 +72,6 @@ set directory=~/.vim/_temp/   " where to put swap files.
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 " tabs to two spaces for js
 
 inoremap jj <Esc>
+
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
