@@ -17,7 +17,11 @@ filetype plugin indent on
 
 if has('gui_running')
   set background=dark
-  colorscheme solarized
+  try
+    colorscheme solarized
+  catch /^Vim\%((\a\+)\)\=:E185/
+    "Do nothing
+  endtry
   set guioptions-=T
   if has("gui_macvim")
     set guifont=Inconsolata:h18
@@ -26,7 +30,11 @@ if has('gui_running')
     set guifont=Monospace\ 14
   endif
 else
-  colorscheme zenburn
+  try
+    colorscheme zenburn
+  catch /^Vim\%((\a\+)\)\=:E185/
+    "Do nothing
+  endtry
 endif
 
 syntax on                      "Syntax highlighting on
