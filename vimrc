@@ -11,6 +11,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'rakr/vim-one'
 
 call vundle#end()
 filetype plugin indent on
