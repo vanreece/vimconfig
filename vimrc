@@ -80,6 +80,7 @@ set directory=~/.vim/_temp/   " where to put swap files.
 
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 " tabs to two spaces for js
 
+nnoremap ZS :w<CR>
 inoremap jj <Esc>
 
 let g:ycm_autoclose_preview_window_after_completion=1
