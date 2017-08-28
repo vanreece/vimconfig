@@ -6,12 +6,13 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'rakr/vim-one'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 filetype plugin indent on
@@ -81,9 +82,9 @@ set directory=~/.vim/_temp/   " where to put swap files.
 
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 " tabs to two spaces for js
 
-nnoremap ZS :w<CR>
+nnoremap <leader>s :w<CR>
 inoremap jj <Esc>
 
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"let g:ycm_autoclose_preview_window_after_completion=1
+"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 command! RandomLine execute 'normal! '.(matchstr(system('od -vAn -N3 -tu4 /dev/urandom'), '^\_s*\zs.\{-}\ze\_s*$') % line('$')).'G'
