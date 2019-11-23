@@ -19,7 +19,6 @@ filetype plugin indent on
 "End Vundle Setup
 
 if has('gui_running')
-  set background=dark
   try
     colorscheme solarized
   catch /^Vim\%((\a\+)\)\=:E185/
@@ -34,7 +33,7 @@ if has('gui_running')
   endif
 else
   try
-    colorscheme zenburn
+    colorscheme solarized
   catch /^Vim\%((\a\+)\)\=:E185/
     "Do nothing
   endtry
@@ -89,3 +88,27 @@ inoremap <Esc> <nul>
 "let g:ycm_autoclose_preview_window_after_completion=1
 "map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 command! RandomLine execute 'normal! '.(matchstr(system('od -vAn -N3 -tu4 /dev/urandom'), '^\_s*\zs.\{-}\ze\_s*$') % line('$')).'G'
+
+function! SetBackgroundMode(...)
+    let s:new_bg = "light"
+    if $TERM_PROGRAM ==? "Apple_Terminal"
+        let s:mode = systemlist("defaults read -g AppleInterfaceStyle")[0]
+        if s:mode ==? "dark"
+            let s:new_bg = "dark"
+        else
+            let s:new_bg = "light"
+        endif
+    else
+        " This is for Linux where I use an environment variable for this:
+        if $VIM_BACKGROUND ==? "dark"
+            let s:new_bg = "dark"
+        else
+            let s:new_bg = "light"
+        endif
+    endif
+    if &background !=? s:new_bg
+        let &background = s:new_bg
+    endif
+endfunction
+"call SetBackgroundMode()
+call timer_start(3000, "SetBackgroundMode", {"repeat": -1})
