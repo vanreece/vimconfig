@@ -83,7 +83,7 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 " tabs to two spaces for js
 
 nnoremap <leader>s :w<CR>
 inoremap jk <Esc>
-inoremap <Esc> <nul>
+"inoremap <Esc> <nul>
 
 "let g:ycm_autoclose_preview_window_after_completion=1
 "map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
